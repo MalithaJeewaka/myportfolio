@@ -12,8 +12,8 @@ export default {
         grey: {
           1: "#999D9E",
         },
-        black: {
-          1: "#141517",
+        blackish: {
+          1: "#1c1d20",
         },
       },
     },

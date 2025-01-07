@@ -4,11 +4,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-hidden text-white h-[200vh]">
-      <div className="pb-[100px] bg-grey-1">
+    <div className="relative overflow-x-hidden text-white">
+      <div className=" bg-grey-1">
         <Hero />
       </div>
-      <About />
+      <div className="max-w-7xl mx-auto">
+        <About />
+      </div>
     </div>
   );
 }

@@ -73,10 +73,11 @@ const Hero = () => {
     xPercent += 0.03 * direction;
     requestAnimationFrame(animation);
   };
+
   return (
-    <div className="bg-grey-1 relative h-screen w-screen flex justify-between items-center">
-      <div ref={containerRef} className="h-full flex-1 relative">
-        <div className="w-1/2 h-28 bg-black-1 absolute top-1/2 translate-y-[-50%] rounded-r-full flex items-center justify-between">
+    <div className="bg-grey-1 relative h-[110vh] w-screen flex justify-between ">
+      <div ref={containerRef} className="h-screen flex-1 relative">
+        <div className="w-1/2 h-28 bg-blackish-1 absolute top-1/2 translate-y-[-50%] rounded-r-full flex items-center justify-between">
           <div className=" w-3/5  flex justify-center">
             <p className="leading-6 text-lg ">
               Located <br /> in the <br /> Sri Lanka
@@ -96,18 +97,20 @@ const Hero = () => {
         </div>
       </div>
 
-      <div ref={containerRef} className="h-full w-[600px] relative">
-        <Image
-          src={"/assets/ironman.png"}
-          width={500}
-          height={500}
-          alt="ironman"
-          className="absolute -bottom-[8rem]"
-        />
-      </div>
       <div
         ref={containerRef}
-        className="h-full flex-1 flex flex-col justify-center  relative"
+        className="h-full w-[600px] relative  bg-center bg-cover bg-no-repeat "
+      ></div>
+      <Image
+        src={"/assets/me.png"}
+        width={950}
+        height={950}
+        alt="ironman"
+        className="object-cover object-center absolute bottom-0 left-1/2 -translate-x-[50%]"
+      />
+      <div
+        ref={containerRef}
+        className="h-screen flex-1 flex flex-col justify-center  relative"
       >
         <Image
           ref={arrowRef}
