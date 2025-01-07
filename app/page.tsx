@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="pb-[100px] bg-grey-1">
         <Hero />
       </div>
+      <About />
     </div>
   );
 }
