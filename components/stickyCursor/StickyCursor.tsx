@@ -30,7 +30,7 @@ export default function index({ stickyElement }: { stickyElement?: any }) {
   }, []);
 
   return (
-    <div className={styles.cursorContainer}>
+    <div>
       <motion.div
         style={{
           left: smoothMouse.x,

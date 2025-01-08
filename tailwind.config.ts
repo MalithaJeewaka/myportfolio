@@ -15,6 +15,7 @@ export default {
         blackish: {
           1: "#1c1d20",
         },
+        bluish: "#455CE9",
       },
     },
   },

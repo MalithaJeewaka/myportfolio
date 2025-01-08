@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
+import Scene from "./Scene";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,7 +61,7 @@ const About = () => {
     <div
       ref={containerRef}
       id="container"
-      className=" w-full px-10 text-black flex  gap-24 py-[170px] overflow-hidden"
+      className="relative w-full px-10 text-black flex  gap-24 py-[170px] overflow-hidden"
     >
       <div className="flex-3 px-2">
         <p className="text-[calc(1.3rem+1vw)] font-normal text-anim leading-tight">
@@ -82,7 +83,7 @@ const About = () => {
         </div>
         <div
           ref={circleRef}
-          className="w-[210px] h-[210px] rounded-full bg-blackish-1 flex justify-center items-center text-white text-[1.1rem] cursor-pointer"
+          className="w-[210px] h-[210px] rounded-full bg-black flex justify-center items-center text-white text-[1.1rem] cursor-pointer"
         >
           <p>About me</p>
         </div>
