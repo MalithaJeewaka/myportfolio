@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import LenisProvider from "@/components/LenisProvider";
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header/index";
 
 import StickyCursor from "@/components/stickyCursor/StickyCursor";
 
@@ -37,7 +38,7 @@ export default function RootLayout({
       <LenisProvider>
         <body className={`${poppins.className} relative antialiased`}>
           <StickyCursor />
-          <Navbar />
+          <Header />
           {children}
         </body>
       </LenisProvider>

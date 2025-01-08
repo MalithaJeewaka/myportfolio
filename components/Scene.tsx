@@ -54,8 +54,18 @@ export default function Scene() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Fill the canvas to fully cover the area
-    ctx.fillStyle = "#455CE9"; // Set the initial color
+    // Create a linear gradient
+    const gradient = ctx.createLinearGradient(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+    gradient.addColorStop(0, "#898a8d"); // Starting color
+    gradient.addColorStop(1, "#1b2229"); // Ending color
+
+    // Use the gradient as the fill style
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Set global composite operation to reveal on draw
