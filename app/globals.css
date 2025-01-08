@@ -22,5 +22,6 @@ html {
 }
 
 body {
-  overflow: hidden; /* Lenis handles scrolling */
+  overflow: hidden;
+  /* Lenis handles scrolling */
 }
