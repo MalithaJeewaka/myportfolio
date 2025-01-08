@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import LenisProvider from "@/components/LenisProvider";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Header from "@/components/Header/index";
 
 import StickyCursor from "@/components/stickyCursor/StickyCursor";
