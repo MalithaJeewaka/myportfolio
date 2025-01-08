@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Parallax from "./Parallax";
+import ZoomParallax from "./ZoomParallax";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,7 +94,7 @@ const Hero = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-grey-1 relative h-[110vh] w-screen flex justify-between -z-10"
+      className="bg-gradient-to-r from-[#6d6e71] to-[#1b2229] relative h-[110vh] w-screen flex justify-between -z-10"
     >
       <div ref={containerRef} className="h-screen flex-1 relative ">
         <div className="w-1/2 h-28 bg-blackish-1 absolute top-1/2 translate-y-[-50%] rounded-r-full flex items-center justify-between">

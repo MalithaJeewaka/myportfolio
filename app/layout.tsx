@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <LenisProvider>
-        <body className={`${poppins.className} relative antialiased`}>
+        <body className={`${poppins.className}  antialiased`}>
           <StickyCursor />
           <Header />
           {children}

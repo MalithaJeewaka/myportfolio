@@ -20,6 +20,7 @@
     "sass": "^1.83.1"
   },
   "devDependencies": {
+    "@types/locomotive-scroll": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

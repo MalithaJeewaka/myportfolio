@@ -8,15 +8,17 @@ import { main } from "framer-motion/client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/index";
+import ZoomParallax from "@/components/ZoomParallax/index";
+import Prank from "@/components/Prank";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
-      // const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
-      // const locomotiveScroll = new LocomotiveScroll();
+      const locomotiveScroll = new LocomotiveScroll();
 
       setTimeout(() => {
         setIsLoading(false);
@@ -27,6 +29,7 @@ export default function Home() {
       }, 2000);
     })();
   }, []);
+
   return (
     <main>
       <AnimatePresence mode="wait">
