@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import LenisProvider from "@/components/LenisProvider";
 
 const poppins = Poppins({
   subsets: ["latin"], // Choose the subsets you need
@@ -30,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <LenisProvider>
+        <body className={`${poppins.className} antialiased`}>{children}</body>
+      </LenisProvider>
     </html>
   );
 }
