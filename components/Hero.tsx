@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
+import Parallax from "./Parallax";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,11 +139,12 @@ const Hero = () => {
           alt="arrow"
           className="absolute left-0 top-1/3"
         />
-
-        <h2 className="leading-[3.5rem] text-[2.3rem] tracking-tight">
-          Undergraduate <br />
-          Computer Engineer
-        </h2>
+        <Parallax speed={0.2}>
+          <h2 className="leading-[3.5rem] text-[2.3rem] tracking-tight">
+            Undergraduate <br />
+            Computer Engineer
+          </h2>
+        </Parallax>
       </div>
 
       <div className="absolute top-[calc(100vh-350px)]">
