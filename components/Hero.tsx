@@ -15,6 +15,7 @@ const Hero = () => {
   const imageRef = useRef(null);
   const arrowRef = useRef(null);
   const containerRef = useRef(null);
+  const mainContainer = useRef(null);
   let xPercent = 0;
   let direction = -1;
 
@@ -32,6 +33,20 @@ const Hero = () => {
       x: "-=200px",
       y: "-=100px",
     });
+
+    // const tl1 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: mainContainer.current,
+    //     start: "top top",
+    //     end: "+=1000",
+    //     markers: true,
+    //     scrub: true,
+    //     pin: true,
+    //     pinSpacing: false,
+    //   },
+    // });
+
+    // tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
 
     gsap.to(imageRef.current, {
       rotateZ: 360, // Full rotation
@@ -75,8 +90,11 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-grey-1 relative h-[110vh] w-screen flex justify-between ">
-      <div ref={containerRef} className="h-screen flex-1 relative">
+    <div
+      ref={mainContainer}
+      className="bg-grey-1 relative h-[110vh] w-screen flex justify-between -z-10"
+    >
+      <div ref={containerRef} className="h-screen flex-1 relative ">
         <div className="w-1/2 h-28 bg-blackish-1 absolute top-1/2 translate-y-[-50%] rounded-r-full flex items-center justify-between">
           <div className=" w-3/5  flex justify-center">
             <p className="leading-6 text-lg ">
