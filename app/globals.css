@@ -19,7 +19,8 @@
 html {
   scroll-behavior: auto; /* Disable native smooth scrolling */
 }
-W body {
+
+body {
   overflow: hidden;
   background-color: #e1dfdd;
   /* Lenis handles scrolling */

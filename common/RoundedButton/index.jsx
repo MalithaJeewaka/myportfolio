@@ -6,7 +6,7 @@ import Magnetic from "../Magnetic";
 
 export default function Button({
   children,
-  backgroundColor = "#455CE9",
+  backgroundColor = "#800000",
   ...attributes
 }) {
   const circle = useRef(null);

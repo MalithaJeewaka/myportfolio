@@ -84,7 +84,7 @@ const About = () => {
             )}
           </p>
         </div>
-        <div ref={circleRef} className="flex justify-center items-center ">
+        <div ref={circleRef} className="cursor-pointer">
           <Button className={styles.button}>
             <p>About me</p>
           </Button>
