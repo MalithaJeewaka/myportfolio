@@ -57,21 +57,17 @@ const Hero2 = () => {
 
     tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
 
-    gsap.to(imageRef.current, {
-      rotateZ: 360, // Full rotation
-      duration: 10, // Time for one full rotation
-      repeat: -1, // Infinite loop
-      ease: "linear", // Constant speed
-    });
+    gsap.fromTo(
+      imageRef.current,
+      { width: 0 },
+      { width: "100%", duration: 2, delay: 2.5 }
+    );
 
     gsap.to(arrowRef.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        scrub: 0.25,
-      },
-      rotateZ: 45,
+      y: -10,
+      yoyo: true,
+      duration: 1,
+      repeat: -1,
     });
 
     gsap.to(containerRef.current, {
@@ -105,7 +101,7 @@ const Hero2 = () => {
     >
       <div className=" flex-1 flex items-end mb-3">
         <h1
-          className={`text-[8.5rem] font-medium leading-[7rem] ${bebas.className}`}
+          className={`text-[8.5rem] font-medium leading-[7rem] tracking-[5px] ${bebas.className}`}
         >
           CREATIVE
           <br /> DEVELOPER
@@ -113,18 +109,24 @@ const Hero2 = () => {
       </div>
 
       <div className="w-[800px] h-[250px]">
-        <div className="relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed">
-          {/* <Image
-            src={"/images/mee.jpg"}
+        <div
+          ref={imageRef}
+          className="relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover "
+        >
+          {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
+          <Image
+            src={"/images/mee4.jpg"}
             layout="fill"
             alt="me"
             className="object-cover object-center  w-full"
-          /> */}
+          />
         </div>
       </div>
+
       <div className="flex flex-1 ">
         <div className="flex flex-1 justify-between items-end gap-5">
           <Image
+            ref={arrowRef}
             src={"/assets/down-arrow.svg"}
             width={100}
             height={100}
@@ -138,7 +140,7 @@ const Hero2 = () => {
         </div>
         <div className="flex-1 flex items-end justify-end">
           <h1
-            className={`text-[9rem] font-medium leading-[7.5rem] text-right ${bebas.className}`}
+            className={`text-[9rem] font-medium leading-[7.5rem] text-right tracking-[5px] ${bebas.className}`}
           >
             MALITHA <br />
             JEEWAKA
