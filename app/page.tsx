@@ -48,9 +48,6 @@ export default function Home() {
       </div>
       <ZoomParallax />
       <About />
-      <div className="">
-        <Button>Hello</Button>
-      </div>
     </main>
   );
 }
