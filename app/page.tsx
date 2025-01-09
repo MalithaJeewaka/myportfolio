@@ -37,11 +37,11 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <div className="relative overflow-x-hidden text-white">
+      <div className="z-0 relative overflow-x-hidden text-white">
         {/* <Hero /> */}
         <Hero2 />
 
-        <div className="  bg-white z-10">
+        <div className=" bg-cream z-10">
           <div className="max-w-7xl mx-auto ">
             <About />
             <RecentWorks />

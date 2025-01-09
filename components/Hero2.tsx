@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Parallax from "./Parallax";
 import ZoomParallax from "./ZoomParallax";
+import Magnetic from "@/common/Magnetic";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,22 +95,22 @@ const Hero2 = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-cream relative h-[100vh] w-screen flex flex-col px-[6rem]   -z-10 text-black py-10 gap-3 pt-16"
+      className="bg-cream -z-10 relative h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
     >
       <div className=" flex-1 flex items-end mb-3">
-        <h1 className="text-[8rem] font-medium leading-[6.5rem] ">
+        <h1 className="text-[8.5rem] font-medium leading-[7rem] ">
           CREATIVE
           <br /> DEVELOPER
         </h1>
       </div>
 
       <div className="w-[800px] h-[250px]">
-        <div className="relative h-full bg-[url(/images/me4.png)]  bg-cover bg-center">
+        <div className="relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed">
           {/* <Image
-            src={"/images/me3.png"}
+            src={"/images/mee.jpg"}
             layout="fill"
             alt="me"
-            className="object-cover w-full"
+            className="object-cover object-center  w-full"
           /> */}
         </div>
       </div>
@@ -129,7 +130,7 @@ const Hero2 = () => {
           </div>
         </div>
         <div className="flex-1 flex items-end justify-end">
-          <h1 className="text-[8rem] font-medium leading-[6.5rem] text-right">
+          <h1 className="text-[9rem] font-medium leading-[7.5rem] text-right">
             MALITHA <br />
             JEEWAKA
           </h1>
