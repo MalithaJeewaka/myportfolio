@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import LenisProvider from "@/components/LenisProvider";
@@ -11,6 +11,11 @@ import StickyCursor from "@/components/stickyCursor/StickyCursor";
 const poppins = Poppins({
   subsets: ["latin"], // Choose the subsets you need
   weight: ["300", "400", "500", "600", "700"], // Specify the font weights you want
+});
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"], // Choose the subsets you need
+  weight: ["400"], // Specify the font weights you want
 });
 
 const geistSans = Geist({
@@ -36,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <LenisProvider>
-        <body className={`${poppins.className}  antialiased`}>
+        <body className={`${bebas.className}  antialiased`}>
           <StickyCursor />
           <Header />
           {children}

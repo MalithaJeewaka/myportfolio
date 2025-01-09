@@ -8,6 +8,12 @@ import { ScrollTrigger } from "gsap/all";
 import Parallax from "./Parallax";
 import ZoomParallax from "./ZoomParallax";
 import Magnetic from "@/common/Magnetic";
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"], // Choose the subsets you need
+  weight: ["400"], // Specify the font weights you want
+});
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -98,7 +104,9 @@ const Hero2 = () => {
       className="bg-cream -z-10 relative h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
     >
       <div className=" flex-1 flex items-end mb-3">
-        <h1 className="text-[8.5rem] font-medium leading-[7rem] ">
+        <h1
+          className={`text-[8.5rem] font-medium leading-[7rem] ${bebas.className}`}
+        >
           CREATIVE
           <br /> DEVELOPER
         </h1>
@@ -129,7 +137,9 @@ const Hero2 = () => {
           </div>
         </div>
         <div className="flex-1 flex items-end justify-end">
-          <h1 className="text-[9rem] font-medium leading-[7.5rem] text-right">
+          <h1
+            className={`text-[9rem] font-medium leading-[7.5rem] text-right ${bebas.className}`}
+          >
             MALITHA <br />
             JEEWAKA
           </h1>
