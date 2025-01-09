@@ -12,7 +12,7 @@ const words = [
   "やあ",
   "Hallå",
   "Guten tag",
-  "Hallo",
+  "வணக்கம்",
   "ආයුබෝවන්",
 ];
 

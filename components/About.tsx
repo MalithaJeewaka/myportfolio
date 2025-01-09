@@ -6,6 +6,8 @@ import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Scene from "./Scene";
 import ZoomParallax from "./ZoomParallax";
+import styles from "../app/styles.module.scss";
+import Button from "@/common/RoundedButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,11 +84,10 @@ const About = () => {
             )}
           </p>
         </div>
-        <div
-          ref={circleRef}
-          className="w-[210px] h-[210px] rounded-full bg-black flex justify-center items-center text-white text-[1.1rem] cursor-pointer"
-        >
-          <p>About me</p>
+        <div ref={circleRef} className="flex justify-center items-center ">
+          <Button className={styles.button}>
+            <p>About me</p>
+          </Button>
         </div>
       </div>
     </div>
