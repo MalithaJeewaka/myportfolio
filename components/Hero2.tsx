@@ -122,10 +122,9 @@ const Hero2 = () => {
             height={100}
             alt="down arrow"
           />
-          <div className="flex-1  flex justify-end">
-            <p className=" text-[2rem] font-normal leading-tight">
-              UNDERGRADUATE <br />
-              COMPUTER ENGINEER
+          <div className="flex-1  flex justify-start">
+            <p className=" text-[1.6rem] font-normal leading-tight">
+              Dive into <br /> the story
             </p>
           </div>
         </div>
