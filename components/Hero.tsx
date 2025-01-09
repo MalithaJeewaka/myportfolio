@@ -94,8 +94,9 @@ const Hero = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-gradient-to-r from-[#6d6e71] to-[#1b2229] relative h-[110vh] w-screen flex justify-between -z-10"
+      className="bg-grey-1 relative h-[110vh] w-screen flex justify-between -z-10"
     >
+      {/* bg-gradient-to-r from-[#6d6e71] to-[#1b2229] */}
       <div ref={containerRef} className="h-screen flex-1 relative ">
         <div className="w-1/2 h-28 bg-blackish-1 absolute top-1/2 translate-y-[-50%] rounded-r-full flex items-center justify-between">
           <div className=" w-3/5  flex justify-center">
@@ -125,8 +126,8 @@ const Hero = () => {
         src={"/assets/me.png"}
         width={950}
         height={950}
-        alt="ironman"
-        className="object-cover object-center absolute bottom-0 left-1/2 -translate-x-[50%]"
+        alt="me"
+        className="object-cover object-center absolute bottom-0 left-1/2 -translate-x-[50%]  "
       />
       <div
         ref={containerRef}

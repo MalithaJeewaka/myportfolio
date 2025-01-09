@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/index";
 import ZoomParallax from "@/components/ZoomParallax/index";
 import Prank from "@/components/Prank";
+import Button from "@/common/RoundedButton";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,11 @@ export default function Home() {
             <RecentWorks />
           </div>
         </div>
+      </div>
+      <ZoomParallax />
+      <About />
+      <div className="">
+        <Button>Hello</Button>
       </div>
     </main>
   );

@@ -51,7 +51,7 @@ export default function Header() {
           <p className={styles.copyright}>©</p>
           <div className={styles.name}>
             <p className={styles.codeBy}>Code by</p>
-            <p className={styles.dennis}>Malitha </p>
+            <p className={`${styles.dennis}`}>Malitha</p>
             <p className={styles.snellenberg}>Jeewaka</p>
           </div>
         </div>
