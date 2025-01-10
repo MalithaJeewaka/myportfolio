@@ -12,6 +12,7 @@ import ZoomParallax from "@/components/ZoomParallax/index";
 import Prank from "@/components/Prank";
 import Button from "@/common/RoundedButton";
 import Hero2 from "@/components/Hero2";
+import Parallax from "@/components/Parallax";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,18 +38,21 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
+
       <div className="z-0 relative overflow-x-hidden text-white">
         {/* <Hero /> */}
         <Hero2 />
+      </div>
 
-        <div className=" bg-cream z-10">
-          <div className="max-w-7xl mx-auto ">
-            <About />
-            <RecentWorks />
-          </div>
+      <ZoomParallax />
+
+      <div className=" bg-cream z-10">
+        <div className="max-w-7xl mx-auto ">
+          <About />
+          <RecentWorks />
         </div>
       </div>
-      <ZoomParallax />
+
       <About />
     </main>
   );

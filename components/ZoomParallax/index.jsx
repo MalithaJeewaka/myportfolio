@@ -14,21 +14,52 @@ import Picture12 from "../../public/assets/3.jpg";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function ZoomParallax() {
   const container = useRef(null);
+  const titleRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start start", "end end"],
   });
 
-  const scale4 = useTransform(scrollYProgress, [0, 1], [0.6, 4]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [0.6, 5]);
-  const scale6 = useTransform(scrollYProgress, [0, 1], [0.6, 5.4]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [0.6, 5.8]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [0.6, 6.2]);
-  const scale11 = useTransform(scrollYProgress, [0, 1], [0.6, 6.6]);
-  const scale12 = useTransform(scrollYProgress, [0, 1], [0.6, 7]);
+  useGSAP(() => {
+    gsap.from(titleRef.current, {
+      scrollTrigger: {
+        trigger: container.current,
+        start: "-10% center",
+        end: "0% center",
+        markers: false,
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      y: 100,
+    });
+  }, []);
+
+  // useGSAP(() => {
+  //   gsap.to(titleRef.current, {
+  //     scrollTrigger: {
+  //       trigger: container.current,
+  //       start: "15% center",
+  //       end: "20% center",
+  //       markers: true,
+  //       toggleActions: "play none none reverse",
+  //     },
+  //     x: -100,
+  //     opacity: 0,
+  //   });
+  // }, []);
+
+  const scale4 = useTransform(scrollYProgress, [0, 1], [0.5, 4]);
+  const scale5 = useTransform(scrollYProgress, [0, 1], [0.5, 5]);
+  const scale6 = useTransform(scrollYProgress, [0, 1], [0.5, 5.4]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [0.5, 5.8]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [0.5, 6.2]);
+  const scale11 = useTransform(scrollYProgress, [0, 1], [0.5, 6.6]);
+  const scale12 = useTransform(scrollYProgress, [0, 1], [0.5, 7]);
 
   const pictures = [
     {
@@ -91,6 +122,9 @@ export default function ZoomParallax() {
 
   return (
     <div ref={container} className={styles.container}>
+      <h1 ref={titleRef} className="absolute top-10 text-[5rem]  left-[7rem]">
+        Dive Into The Story...
+      </h1>
       <div className={`${styles.sticky}`}>
         {pictures.map(({ src, scale }, index) => {
           return (

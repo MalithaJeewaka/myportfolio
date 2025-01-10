@@ -25,6 +25,7 @@ const Hero2 = () => {
   const arrowRef = useRef(null);
   const containerRef = useRef(null);
   const mainContainer = useRef(null);
+  const imageContainerRef = useRef(null);
   let xPercent = 0;
   let direction = -1;
 
@@ -43,19 +44,19 @@ const Hero2 = () => {
       y: "-=100px",
     });
 
-    const tl1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: mainContainer.current,
-        start: "top top",
-        end: "+=1000",
-        markers: false,
-        scrub: true,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+    // const tl1 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: mainContainer.current,
+    //     start: "top top",
+    //     end: "+=1000",
+    //     markers: false,
+    //     scrub: true,
+    //     pin: true,
+    //     pinSpacing: false,
+    //   },
+    // });
 
-    tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
+    // tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
 
     gsap.fromTo(
       imageRef.current,
@@ -94,6 +95,13 @@ const Hero2 = () => {
     requestAnimationFrame(animation);
   };
 
+  const mouseEnterAnim = () => {
+    gsap.to(imageContainerRef.current, { width: "100%" });
+  };
+  const mouseLeaveAnim = () => {
+    gsap.to(imageContainerRef.current, { width: "800px" });
+  };
+
   return (
     <div
       ref={mainContainer}
@@ -108,18 +116,21 @@ const Hero2 = () => {
         </h1>
       </div>
 
-      <div className="w-[800px] h-[250px]">
-        <div
-          ref={imageRef}
-          className="relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover "
-        >
+      <div
+        // ref={imageContainerRef}
+        // onMouseEnter={mouseEnterAnim}
+        // onMouseLeave={mouseLeaveAnim}
+        ref={imageRef}
+        className="w-[800px] h-[250px]"
+      >
+        <div className="relative h-full w-full bg-[url(/images/meee.jpg)] bg-top bg-cover  bg-fixed">
           {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
-          <Image
-            src={"/images/mee4.jpg"}
+          {/* <Image
+            src={"/images/meee.jpg"}
             layout="fill"
             alt="me"
-            className="object-cover object-center  w-full"
-          />
+            className="object-cover object-center w-full"
+          /> */}
         </div>
       </div>
 
