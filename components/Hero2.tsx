@@ -120,17 +120,20 @@ const Hero2 = () => {
         // ref={imageContainerRef}
         // onMouseEnter={mouseEnterAnim}
         // onMouseLeave={mouseLeaveAnim}
-        ref={imageRef}
+
         className="w-[800px] h-[250px]"
       >
-        <div className="relative h-full w-full bg-[url(/images/meee.jpg)] bg-top bg-cover  bg-fixed">
+        <div
+          ref={imageRef}
+          className="relative h-full w-full bg-[url(/images/meee.jpg)] bg-top bg-cover  bg-fixed"
+        >
           {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
-          {/* <Image
-            src={"/images/meee.jpg"}
+          <Image
+            src={"/images/mee4.jpg"}
             layout="fill"
             alt="me"
             className="object-cover object-center w-full"
-          /> */}
+          />
         </div>
       </div>
 
@@ -149,6 +152,7 @@ const Hero2 = () => {
             </p>
           </div>
         </div>
+
         <div className="flex-1 flex items-end justify-end">
           <h1
             className={`text-[9rem] font-medium leading-[7.5rem] text-right tracking-[5px] ${bebas.className}`}
