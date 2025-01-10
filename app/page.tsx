@@ -52,8 +52,6 @@ export default function Home() {
           <RecentWorks />
         </div>
       </div>
-
-      <About />
     </main>
   );
 }
