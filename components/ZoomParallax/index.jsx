@@ -26,16 +26,32 @@ export default function ZoomParallax() {
   });
 
   useGSAP(() => {
-    gsap.from(titleRef.current, {
+    gsap.from(".gallery-anim", {
       scrollTrigger: {
         trigger: container.current,
-        start: "-10% center",
+        start: "-1% center",
         end: "0% center",
         markers: false,
         toggleActions: "play none none reverse",
       },
       opacity: 0,
-      y: 100,
+      duration: 0.5,
+      ease: "power2.out",
+      x: 200,
+    });
+
+    gsap.from(titleRef.current, {
+      scrollTrigger: {
+        trigger: container.current,
+        start: "-1% center",
+        end: "0% center",
+        markers: false,
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      x: -200,
+      duration: 0.5,
+      ease: "power2.out",
     });
   }, []);
 
@@ -125,7 +141,7 @@ export default function ZoomParallax() {
       <h1 ref={titleRef} className="absolute top-10 text-[5rem]  left-[7rem]">
         Dive Into The Story...
       </h1>
-      <div className={`${styles.sticky}`}>
+      <div className={`${styles.sticky} gallery-anim`}>
         {pictures.map(({ src, scale }, index) => {
           return (
             <motion.div key={index} style={{ scale }} className={styles.el}>
