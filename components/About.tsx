@@ -126,8 +126,8 @@ const About = () => {
               target="_blank"
             >
               <LogoAnimation
-                width={200}
-                height={200}
+                width={190}
+                height={190}
                 src="/animations/linkedin.lottie"
               />
             </Link>
