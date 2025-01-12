@@ -33,7 +33,7 @@ const clashDisplay = CustomFont({
       style: "normal",
     },
     {
-      path: "fonts/clash-display/ClashDisplay-SemiBold.woff2",
+      path: "fonts/clash-display/ClashDisplay-Semibold.woff2",
       weight: "600",
       style: "normal",
     },
