@@ -8,6 +8,8 @@ import Scene from "./Scene";
 import ZoomParallax from "./ZoomParallax";
 import styles from "../app/styles.module.scss";
 import Button from "@/common/RoundedButton";
+import LogoAnimation from "@/components/IconAnimationComponent";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,9 +107,30 @@ const About = () => {
             )}
           </p>
         </div>
-        <div ref={circleRef} className="flex justify-center items-center ">
-          <Button className={styles.button}>
-            <p>About me</p>
+        <div
+          ref={circleRef}
+          className="flex justify-center items-center gap-10"
+        >
+          <Button className={`${styles.button} w-[150px] h-[150px] `}>
+            <Link href={"https://github.com/MalithaJeewaka"} target="_blank">
+              <LogoAnimation
+                width={170}
+                height={170}
+                src="/animations/github.lottie"
+              />
+            </Link>
+          </Button>
+          <Button className={`${styles.button} h-[150px] w-[150px] `}>
+            <Link
+              href={"https://www.linkedin.com/in/malitha-jeewaka-37546b26b/"}
+              target="_blank"
+            >
+              <LogoAnimation
+                width={200}
+                height={200}
+                src="/animations/linkedin.lottie"
+              />
+            </Link>
           </Button>
         </div>
       </div>

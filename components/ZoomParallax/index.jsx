@@ -35,9 +35,9 @@ export default function ZoomParallax() {
         toggleActions: "play none none reverse",
       },
       opacity: 0,
-      duration: 0.5,
+      duration: 1,
       ease: "power2.out",
-      x: 200,
+      y: 100,
     });
 
     gsap.from(titleRef.current, {
@@ -49,8 +49,8 @@ export default function ZoomParallax() {
         toggleActions: "play none none reverse",
       },
       opacity: 0,
-      x: -200,
-      duration: 0.5,
+      x: -100,
+      duration: 1,
       ease: "power2.out",
     });
   }, []);

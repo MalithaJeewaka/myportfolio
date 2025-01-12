@@ -1,7 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import RecentWorks from "@/components/Achievements";
+import Achievements from "@/components/Achievements";
 import Scene from "@/components/Scene";
 import { AnimatePresence } from "framer-motion";
 import { main } from "framer-motion/client";
@@ -56,7 +56,7 @@ export default function Home() {
         <Projects />
       </div>
       <div className="max-w-7xl mx-auto mt-10">
-        <RecentWorks />
+        <Achievements />
       </div>
     </main>
   );
