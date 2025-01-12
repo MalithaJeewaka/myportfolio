@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "../../common/RoundedButton";
 import Magnetic from "../../common/Magnetic";
+import Button2 from "@/common/button/Button";
 
 export default function Header() {
   const header = useRef(null);
@@ -48,7 +49,6 @@ export default function Header() {
     <>
       <div ref={header} className={styles.header}>
         <div className={styles.logo}>
-          <p className={styles.copyright}>©</p>
           <div className={styles.name}>
             <p className={styles.codeBy}>Code by</p>
             <p className={`${styles.dennis}`}>Malitha</p>
@@ -58,19 +58,19 @@ export default function Header() {
         <div className={styles.nav}>
           <Magnetic>
             <div className={styles.el}>
-              <a>Work</a>
+              <Button2 label="Work" />
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>
           <Magnetic>
             <div className={styles.el}>
-              <a>About</a>
+              <Button2 label="About" />
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>
           <Magnetic>
             <div className={styles.el}>
-              <a>Contact</a>
+              <Button2 label="Contact" />
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>

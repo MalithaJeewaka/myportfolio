@@ -1,7 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import RecentWorks from "@/components/RecentWorks";
+import Achievements from "@/components/Achievements";
 import Scene from "@/components/Scene";
 import { AnimatePresence } from "framer-motion";
 import { main } from "framer-motion/client";
@@ -9,10 +9,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/index";
 import ZoomParallax from "@/components/ZoomParallax/index";
-import Prank from "@/components/Prank";
-import Button from "@/common/RoundedButton";
+
 import Hero2 from "@/components/Hero2";
-import Parallax from "@/components/Parallax";
+
+import Button2 from "@/common/button/Button";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,8 +50,13 @@ export default function Home() {
       <div className=" bg-cream z-10">
         <div className="max-w-7xl mx-auto ">
           <About />
-          <RecentWorks />
         </div>
+      </div>
+      <div className=" py-10">
+        <Projects />
+      </div>
+      <div className="max-w-7xl mx-auto mt-10">
+        <Achievements />
       </div>
     </main>
   );
