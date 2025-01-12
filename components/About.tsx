@@ -30,7 +30,7 @@ const About = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: "#container",
-          start: "0% center",
+          start: "10% center",
           end: "center center",
           markers: false,
           scrub: true,

@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 import { useState } from "react";
 
-import Project from "../project/page";
+import Project from "../achievements/page";
 
 import Modal from "../modal/page";
 

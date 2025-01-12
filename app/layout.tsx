@@ -8,6 +8,44 @@ import Header from "@/components/Header/index";
 
 import StickyCursor from "@/components/stickyCursor/StickyCursor";
 
+import CustomFont from "next/font/local";
+
+const clashDisplay = CustomFont({
+  src: [
+    {
+      path: "fonts/clash-display/ClashDisplay-Extralight.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "fonts/clash-display/ClashDisplay-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "fonts/clash-display/ClashDisplay-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "fonts/clash-display/ClashDisplay-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "fonts/clash-display/ClashDisplay-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "fonts/clash-display/ClashDisplay-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-clash-display", // Optional: CSS variable for global usage
+});
+
 const poppins = Poppins({
   subsets: ["latin"], // Choose the subsets you need
   weight: ["300", "400", "500", "600", "700"], // Specify the font weights you want
@@ -41,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <LenisProvider>
-        <body className={`${bebas.className}  antialiased`}>
+        <body className={`${clashDisplay.className}  antialiased`}>
           <StickyCursor />
           <Header />
           {children}

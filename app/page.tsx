@@ -1,7 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import RecentWorks from "@/components/RecentWorks";
+import RecentWorks from "@/components/Achievements";
 import Scene from "@/components/Scene";
 import { AnimatePresence } from "framer-motion";
 import { main } from "framer-motion/client";
@@ -9,10 +9,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/index";
 import ZoomParallax from "@/components/ZoomParallax/index";
-import Prank from "@/components/Prank";
-import Button from "@/common/RoundedButton";
+import Projects from "@/components/double/Projects";
+import { projects } from "@/data";
+
 import Hero2 from "@/components/Hero2";
-import Parallax from "@/components/Parallax";
+
+import Button2 from "@/common/button/Button";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +53,13 @@ export default function Home() {
           <About />
           <RecentWorks />
         </div>
+      </div>
+
+      <div>
+        <Projects projects={[projects[0], projects[1]]} />
+        <Projects projects={[projects[2], projects[3]]} reversed={true} />
+        <Projects projects={[projects[4], projects[5]]} />
+        <Projects projects={[projects[6], projects[7]]} reversed={true} />
       </div>
     </main>
   );

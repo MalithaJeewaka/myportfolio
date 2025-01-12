@@ -29,7 +29,7 @@ export default function ZoomParallax() {
     gsap.from(".gallery-anim", {
       scrollTrigger: {
         trigger: container.current,
-        start: "-1% center",
+        start: "5% center",
         end: "0% center",
         markers: false,
         toggleActions: "play none none reverse",
@@ -43,7 +43,7 @@ export default function ZoomParallax() {
     gsap.from(titleRef.current, {
       scrollTrigger: {
         trigger: container.current,
-        start: "-1% center",
+        start: "5% center",
         end: "0% center",
         markers: false,
         toggleActions: "play none none reverse",
@@ -69,13 +69,13 @@ export default function ZoomParallax() {
   //   });
   // }, []);
 
-  const scale4 = useTransform(scrollYProgress, [0, 1], [0.5, 4]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [0.5, 5]);
-  const scale6 = useTransform(scrollYProgress, [0, 1], [0.5, 5.4]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [0.5, 5.8]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [0.5, 6.2]);
-  const scale11 = useTransform(scrollYProgress, [0, 1], [0.5, 6.6]);
-  const scale12 = useTransform(scrollYProgress, [0, 1], [0.5, 7]);
+  const scale4 = useTransform(scrollYProgress, [0, 1], [0.4, 4]);
+  const scale5 = useTransform(scrollYProgress, [0, 1], [0.4, 5]);
+  const scale6 = useTransform(scrollYProgress, [0, 1], [0.4, 5.4]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [0.4, 5.8]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [0.4, 6.2]);
+  const scale11 = useTransform(scrollYProgress, [0, 1], [0.4, 6.6]);
+  const scale12 = useTransform(scrollYProgress, [0, 1], [0.4, 7]);
 
   const pictures = [
     {
@@ -138,7 +138,7 @@ export default function ZoomParallax() {
 
   return (
     <div ref={container} className={styles.container}>
-      <h1 ref={titleRef} className="absolute top-10 text-[5rem]  left-[7rem]">
+      <h1 ref={titleRef} className="absolute top-10 text-[3rem]  left-[7rem]">
         Dive Into The Story...
       </h1>
       <div className={`${styles.sticky} gallery-anim`}>

@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectSection from "./ProjectSection/page";
 
-const RecentWorks = () => {
+const Achievements = () => {
   return (
     <div>
-      <p className="text-[#706D63] ">RECENT WORK</p>
+      <p className="text-[#706D63] ">Evenets and Achievements</p>
       <ProjectSection />
     </div>
   );
 };
 
-export default RecentWorks;
+export default Achievements;
