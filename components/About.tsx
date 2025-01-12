@@ -31,7 +31,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "#container",
           start: "10% center",
-          end: "center center",
+          end: "65% center",
           markers: false,
           scrub: true,
           // toggleActions: "play none none reverse",

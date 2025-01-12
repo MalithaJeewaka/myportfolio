@@ -42,7 +42,7 @@ const projects = [
   },
 ];
 
-export default function ProjectSection() {
+export default function AchievementsSection() {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
