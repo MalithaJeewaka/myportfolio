@@ -27,6 +27,7 @@ export default {
         cream: "#E1DFDD",
         beig: "#F5F5DC",
         graish: "#333333",
+        redish: "#331C2C",
       },
     },
   },

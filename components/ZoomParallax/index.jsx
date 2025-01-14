@@ -43,10 +43,10 @@ export default function ZoomParallax() {
     gsap.from(titleRef.current, {
       scrollTrigger: {
         trigger: container.current,
-        start: "5% center",
-        end: "0% center",
+        start: "0% center",
+        end: "15% center",
         markers: false,
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
       opacity: 0,
       x: -100,

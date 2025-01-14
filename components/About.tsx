@@ -28,15 +28,15 @@ const About = () => {
       {
         y: "0%",
 
-        duration: 1,
+        duration: 0.5,
         ease: "power2.out",
         scrollTrigger: {
           trigger: "#container",
           start: "10% center",
           end: "65% center",
           markers: false,
-          scrub: true,
-          // toggleActions: "play none none reverse",
+          // scrub: true,
+          toggleActions: "play none none reverse",
         },
         stagger: 0.01,
       }
@@ -111,23 +111,23 @@ const About = () => {
           ref={circleRef}
           className="flex justify-center items-center gap-10"
         >
-          <Button className={`${styles.button} w-[150px] h-[150px] `}>
+          <Button className={`${styles.button} w-[100px] h-[100px] `}>
             <Link href={"https://github.com/MalithaJeewaka"} target="_blank">
               <LogoAnimation
-                width={170}
-                height={170}
+                width={150}
+                height={150}
                 src="/animations/github.lottie"
               />
             </Link>
           </Button>
-          <Button className={`${styles.button} h-[150px] w-[150px] `}>
+          <Button className={`${styles.button} h-[100px] w-[100px] `}>
             <Link
               href={"https://www.linkedin.com/in/malitha-jeewaka-37546b26b/"}
               target="_blank"
             >
               <LogoAnimation
-                width={190}
-                height={190}
+                width={180}
+                height={180}
                 src="/animations/linkedin.lottie"
               />
             </Link>
