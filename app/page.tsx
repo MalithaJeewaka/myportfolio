@@ -9,11 +9,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/index";
 import ZoomParallax from "@/components/ZoomParallax/index";
+import Footer from "@/components/footer/Footer";
 
 import Hero2 from "@/components/Hero2";
 
 import Button2 from "@/common/button/Button";
 import Projects from "@/components/Projects";
+import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,12 +54,19 @@ export default function Home() {
           <About />
         </div>
       </div>
-      <div className=" py-10">
+
+      <div className="py-10">
         <Projects />
       </div>
-      <div className="max-w-7xl mx-auto mt-10">
+
+      <div className="max-w-7xl mx-auto mt-10 z-20">
         <Achievements />
       </div>
+
+      <div className="py-10 ">
+        <Skills />
+      </div>
+      <Footer />
     </main>
   );
 }

@@ -8,12 +8,6 @@ import { ScrollTrigger } from "gsap/all";
 import Parallax from "./Parallax";
 import ZoomParallax from "./ZoomParallax";
 import Magnetic from "@/common/Magnetic";
-// import { Bebas_Neue } from "next/font/google";
-
-// const bebas = Bebas_Neue({
-//   subsets: ["latin"], // Choose the subsets you need
-//   weight: ["400"], // Specify the font weights you want
-// });
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,25 +24,25 @@ const Hero2 = () => {
   let direction = -1;
 
   useGSAP(() => {
-    // const tl1 = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: mainContainer.current,
-    //     start: "top top",
-    //     end: "+=1000",
-    //     markers: false,
-    //     scrub: true,
-    //     pin: true,
-    //     pinSpacing: false,
-    //   },
-    // });
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: mainContainer.current,
+        start: "top top",
+        end: "+=1000",
+        markers: false,
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+      },
+    });
 
-    // tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
+    tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
 
-    gsap.fromTo(
-      imageRef.current,
-      { width: 0 },
-      { width: "100%", duration: 2, delay: 2.5 }
-    );
+    // gsap.fromTo(
+    //   imageRef.current,
+    //   { width: 0 },
+    //   { width: "100%", duration: 2, delay: 2.5 }
+    // );
 
     gsap.to(arrowRef.current, {
       y: -10,
@@ -64,19 +58,19 @@ const Hero2 = () => {
         end: window.innerHeight,
         scrub: 0.25,
       },
-      rotateZ: -180,
+      rotateZ: -90,
       ease: "power2.out",
     });
 
-    gsap.to(imageContainerRef.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        scrub: 0.25,
-      },
-      width: "100%",
-    });
+    // gsap.to(imageContainerRef.current, {
+    //   scrollTrigger: {
+    //     trigger: document.documentElement,
+    //     start: 0,
+    //     end: window.innerHeight,
+    //     scrub: 0.25,
+    //   },
+    //   width: "100%",
+    // });
 
     // gsap.to(containerRef.current, {
     //   scrollTrigger: {
@@ -144,8 +138,8 @@ const Hero2 = () => {
           <Image
             ref={arrowRef}
             src={"/assets/down-arrow.svg"}
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             alt="down arrow"
           />
           <div className="flex-1  flex justify-start">

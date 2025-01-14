@@ -27,10 +27,12 @@
 }
 
 html {
-  scroll-behavior: auto; /* Disable native smooth scrolling */
+  scroll-behavior: auto;
 }
+
 body {
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden;
   background-color: #e1dfdd;
   /* Lenis handles scrolling */
 }

@@ -4,6 +4,7 @@ import Project from "@/components/double/Projects";
 import { div } from "framer-motion/client";
 import Button2 from "@/common/button/Button";
 import Link from "next/link";
+import gsap from "gsap";
 
 export const projects = [
   {
@@ -58,10 +59,18 @@ const Projects = () => {
       </div>
 
       <div>
-        <Project projects={[projects[0], projects[1]]} />
-        <Project projects={[projects[2], projects[3]]} reversed={true} />
-        <Project projects={[projects[4], projects[5]]} />
+        <div className="project-container">
+          <Project projects={[projects[0], projects[1]]} />
+        </div>
+        <div className="project-container">
+          <Project projects={[projects[2], projects[3]]} reversed={true} />
+        </div>
+
+        <div className="project-container">
+          <Project projects={[projects[4], projects[5]]} />
+        </div>
       </div>
+
       <div className="mt-14 flex items-center justify-center">
         <Link href={"/projects"}>
           <Button2

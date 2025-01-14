@@ -56,24 +56,20 @@ export default function Header() {
           </div>
         </div>
         <div className={styles.nav}>
-          <Magnetic>
-            <div className={styles.el}>
-              <Button2 label="Work" />
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <Button2 label="About" />
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <Button2 label="Contact" />
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
+          <div className={styles.el}>
+            <Button2 label="Work" />
+            <div className={styles.indicator}></div>
+          </div>
+
+          <div className={styles.el}>
+            <Button2 label="About" />
+            <div className={styles.indicator}></div>
+          </div>
+
+          <div className={styles.el}>
+            <Button2 label="Contact" />
+            <div className={styles.indicator}></div>
+          </div>
         </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>

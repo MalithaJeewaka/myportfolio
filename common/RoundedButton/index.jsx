@@ -42,7 +42,7 @@ export default function Button({
     <Magnetic>
       <div
         className={`${styles.roundedButton} `}
-        style={{ overflow: "hidden" }}
+        style={{ overflow: "hidden", position: "relative" }}
         onMouseEnter={() => {
           manageMouseEnter();
         }}
@@ -55,7 +55,7 @@ export default function Button({
         <div
           ref={circle}
           style={{ backgroundColor }}
-          className={`${styles.circle}  `}
+          className={`${styles.circle}`}
         ></div>
       </div>
     </Magnetic>
