@@ -22,7 +22,7 @@ export default function index({
       className={styles.project}
     >
       <h2 className="text-black">{title}</h2>
-      <p className="text-black">Design & Development</p>
+      <p className="text-black">Event </p>
     </div>
   );
 }

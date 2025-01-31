@@ -8,45 +8,45 @@ import gsap from "gsap";
 
 export const projects = [
   {
-    name: "Google Pixel Creator Labs",
+    name: "Project Name",
     client: "Grow",
-    description: "A partnership between Google & SN37.",
-    src: "google.jpg",
+    description: "Project Description",
+    src: "6.png",
     year: 2023,
   },
   {
-    name: "Decimal",
+    name: "Project Name",
     client: "Decimal",
-    description: "Portfolio site for Decimal.",
-    src: "decimal.jpg",
+    description: "Project Description",
+    src: "3.png",
     year: 2023,
   },
   {
-    name: "MAVEN 11",
+    name: "Project Name",
     client: "analogueagency",
-    description: "New web design for the blockchain investment fund Maven 11.",
-    src: "maven.jpg",
+    description: "Project Description",
+    src: "4.png",
     year: 2022,
   },
   {
-    name: "Wix Playground Homepage",
+    name: "Project Name",
     client: "Wix Playground",
-    description: "Wix Playground is powered by the Wix.com design team.",
-    src: "wix.jpg",
+    description: "Project Description",
+    src: "11.png",
     year: 2022,
   },
   {
-    name: "POWELL—STUDIO",
+    name: "Project Name",
     client: "POWELL—STUDIO",
-    description: "The online presence for Powell—Studio.",
-    src: "powell.jpg",
+    description: "Project Description",
+    src: "8.png",
     year: 2023,
   },
   {
-    name: "ROCKETPANDA",
+    name: "Project Name",
     client: "ET Studio",
-    description: "An Italian animation studio.",
-    src: "panda.jpg",
+    description: "Project Description",
+    src: "7.png",
     year: 2022,
   },
 ];
@@ -72,7 +72,7 @@ const Projects = () => {
       </div>
 
       <div className="mt-14 flex items-center justify-center">
-        <Link href={"/projects"}>
+        <Link href={"#"}>
           <Button2
             label="More Projects"
             containerClass="border inline-flex border-black px-10 py-2 text-[1.2rem]  font-regular"

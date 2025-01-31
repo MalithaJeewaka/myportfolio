@@ -108,7 +108,9 @@ export default function index({
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <Image src={`${src}`} width={300} height={0} alt="image" />
+                <div className="relative w-[80%] h-[80%]">
+                  <Image src={`${src}`} fill alt="image" />
+                </div>
               </div>
             );
           })}

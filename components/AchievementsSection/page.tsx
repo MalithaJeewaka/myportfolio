@@ -10,33 +10,33 @@ import Modal from "../modal/page";
 
 const projects = [
   {
-    title: "C2 Montreal",
+    title: "AI Sprint",
 
-    src: "/assets/1.jpg",
+    src: "/assets/11.jpg",
 
     color: "#000000",
   },
 
   {
-    title: "Office Studio",
+    title: "Dextron",
 
-    src: "/assets/2.jpg",
+    src: "/assets/10.jpg",
 
     color: "#8C8C8C",
   },
 
   {
-    title: "Locomotive",
+    title: "Haxtream",
 
-    src: "/assets/3.jpg",
+    src: "/assets/14.jpg",
 
     color: "#EFE8D3",
   },
 
   {
-    title: "Silencio",
+    title: "Event 5",
 
-    src: "/assets/4.png",
+    src: "/assets/6.jpg",
 
     color: "#706D63",
   },

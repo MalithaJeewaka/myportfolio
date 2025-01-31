@@ -23,9 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .modal img {
+  object-fit: cover;
   height: auto;
 }
 

@@ -6,11 +6,11 @@ import Picture4 from "../../public/assets/4.jpg";
 import Picture5 from "../../public/assets/5.jpg";
 import Picture6 from "../../public/assets/6.jpg";
 import Picture7 from "../../public/assets/7.jpg";
-import Picture8 from "../../public/assets/9.jpg";
+import Picture16 from "../../public/assets/16.jpg";
 import Picture9 from "../../public/assets/10.jpg";
 import Picture10 from "../../public/assets/11.jpg";
-import Picture11 from "../../public/assets/12.jpg";
-import Picture12 from "../../public/assets/3.jpg";
+import Picture17 from "../../public/assets/17.jpg";
+import Picture13 from "../../public/assets/13.jpg";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
@@ -69,70 +69,40 @@ export default function ZoomParallax() {
   //   });
   // }, []);
 
-  const scale4 = useTransform(scrollYProgress, [0, 1], [0.4, 4]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [0.4, 5]);
-  const scale6 = useTransform(scrollYProgress, [0, 1], [0.4, 5.4]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [0.4, 5.8]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [0.4, 6.2]);
-  const scale11 = useTransform(scrollYProgress, [0, 1], [0.4, 6.6]);
-  const scale12 = useTransform(scrollYProgress, [0, 1], [0.4, 7]);
+  const scale4 = useTransform(scrollYProgress, [0, 1], [0.8, 4]);
+  const scale5 = useTransform(scrollYProgress, [0, 1], [0.8, 5]);
+  const scale6 = useTransform(scrollYProgress, [0, 1], [0.8, 6]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [0.8, 8]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [0.8, 9]);
 
   const pictures = [
     {
-      src: Picture1,
+      src: Picture16,
       scale: scale4,
     },
     {
-      src: Picture3,
+      src: Picture10,
       scale: scale5,
     },
     {
-      src: Picture11,
+      src: Picture13,
+      scale: scale6,
+    },
+    {
+      src: Picture4,
+      scale: scale5,
+    },
+    {
+      src: Picture5,
       scale: scale6,
     },
     {
       src: Picture6,
-      scale: scale5,
-    },
-    {
-      src: Picture7,
-      scale: scale6,
-    },
-    {
-      src: Picture2,
-      scale: scale8,
-    },
-    {
-      src: Picture4,
-      scale: scale9,
-    },
-    {
-      src: Picture5,
       scale: scale8,
     },
     {
       src: Picture7,
       scale: scale9,
-    },
-    {
-      src: Picture10,
-      scale: scale11,
-    },
-    {
-      src: Picture8,
-      scale: scale12,
-    },
-    {
-      src: Picture2,
-      scale: scale11,
-    },
-    {
-      src: Picture3,
-      scale: scale12,
-    },
-    {
-      src: Picture3,
-      scale: scale12,
     },
   ];
 
