@@ -24,19 +24,19 @@ const Hero2 = () => {
   let direction = -1;
 
   useGSAP(() => {
-    const tl1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: mainContainer.current,
-        start: "top top",
-        end: "+=1000",
-        markers: false,
-        scrub: true,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+    // const tl1 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: mainContainer.current,
+    //     start: "top top",
+    //     end: "bottom bottom",
+    //     markers: false,
+    //     scrub: true,
+    //     pin: true,
+    //     pinSpacing: false,
+    //   },
+    // });
 
-    tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
+    // tl1.to(mainContainer.current, { scale: 0.8, duration: 1 });
 
     // gsap.fromTo(
     //   imageRef.current,
@@ -93,7 +93,7 @@ const Hero2 = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-cream -z-10 relative h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
+      className="bg-cream -z-10 relative min-h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
     >
       <div ref={containerRef} className=" flex-1 flex items-end mb-3">
         <h1
@@ -110,26 +110,23 @@ const Hero2 = () => {
         // onMouseLeave={mouseLeaveAnim}
         className="w-[800px] h-[250px] transition"
       >
-        <div
-          ref={imageRef}
-          className="relative h-full w-full bg-[url(/videos/bg2.mp4)] bg-top bg-cover  bg-fixed "
-        >
+        <div ref={imageRef} className="relative h-full w-full ">
           {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
 
-          <video
+          {/* <video
             src="/videos/bg3.mp4"
             className="w-full h-full object-cover pointer-events-none"
             autoPlay
             loop
             muted
-          />
+          /> */}
 
-          {/* <Image
-            src={"/images/mee4.jpg"}
+          <Image
+            src={"/images/bg.jpg"}
             layout="fill"
             alt="me"
             className="object-cover object-center w-full"
-          /> */}
+          />
         </div>
       </div>
 

@@ -60,6 +60,7 @@ const Logos = ({ scrollProgress }) => {
               src="/animations/linkedin.lottie"
               width={150}
               height={150}
+              key={i}
             />
           );
         })}

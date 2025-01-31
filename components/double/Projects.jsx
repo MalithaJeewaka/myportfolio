@@ -49,7 +49,11 @@ export default function Projects({ projects, reversed = false }) {
     >
       <div ref={firstImage} className={styles.imageContainer}>
         <div className={styles.stretchyWrapper}>
-          <Image src={`/images/${projects[0].src}`} fill={true} alt={"image"} />
+          <Image
+            src={`/portfolio/${projects[0].src}`}
+            fill={true}
+            alt={"image"}
+          />
         </div>
         <div className={styles.body}>
           <h3>{projects[0].name}</h3>
@@ -60,7 +64,11 @@ export default function Projects({ projects, reversed = false }) {
 
       <div ref={secondImage} className={styles.imageContainer}>
         <div className={styles.stretchyWrapper}>
-          <Image src={`/images/${projects[1].src}`} fill={true} alt={"image"} />
+          <Image
+            src={`/portfolio/${projects[1].src}`}
+            fill={true}
+            alt={"image"}
+          />
         </div>
         <div className={styles.body}>
           <h3>{projects[1].name}</h3>
