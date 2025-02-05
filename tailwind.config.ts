@@ -10,11 +10,11 @@ export default {
     extend: {
       screens: {
         // Desktop-first breakpoints
-        "2xls": { max: "1535px" }, // For screens smaller than 1536px
-        xls: { max: "1279px" }, // For screens smaller than 1280px
-        lgs: { max: "1023px" }, // For screens smaller than 1024px
-        mds: { max: "767px" }, // For screens smaller than 768px
-        sms: { max: "639px" }, // For screens smaller than 640px
+        xls: { max: "1280px" }, // Default for large screens
+        lgs: { max: "1300px" },
+        mds: { max: "768px" },
+        sms: { max: "767px" }, // Mobile screens (override)
+        xss: { max: "480px" }, // Extra small screens (override)
       },
       colors: {
         grey: {
