@@ -97,7 +97,7 @@ const Hero2 = () => {
     >
       <div ref={containerRef} className=" flex-1 flex items-end mb-3">
         <h1
-          className={`text-[8.5rem] font-medium leading-[7rem] tracking-[5px] `}
+          className={`text-[8rem] lgs:text-[6rem] lgs:leading-none lgs:tracking-normal font-medium leading-[7rem]  `}
         >
           CREATIVE
           <br /> DEVELOPER
@@ -108,7 +108,7 @@ const Hero2 = () => {
         ref={imageContainerRef}
         // onMouseEnter={mouseEnterAnim}
         // onMouseLeave={mouseLeaveAnim}
-        className="w-[800px] h-[250px] transition"
+        className="w-3/4 h-[250px] transition"
       >
         <div ref={imageRef} className="relative h-full w-full ">
           {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
@@ -140,7 +140,7 @@ const Hero2 = () => {
             alt="down arrow"
           />
           <div className="flex-1  flex justify-start">
-            <p className=" text-[1.6rem] font-normal leading-tight">
+            <p className=" text-[1.6rem] lgs:text-[1.2rem] font-normal leading-tight">
               Dive into <br /> the story
             </p>
           </div>
@@ -148,7 +148,7 @@ const Hero2 = () => {
 
         <div className="flex-1 flex items-end justify-end">
           <h1
-            className={`text-[9rem] font-medium leading-[7.5rem] text-right tracking-[5px] `}
+            className={`text-[8rem] lgs:text-[6rem] lgs:leading-none lgs:tracking-normal font-medium leading-[7.5rem] text-right  `}
           >
             MALITHA <br />
             JEEWAKA
