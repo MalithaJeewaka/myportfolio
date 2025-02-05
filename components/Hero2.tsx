@@ -93,7 +93,7 @@ const Hero2 = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-cream -z-10 relative min-h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
+      className="bg-cream -z-10 relative h-[100vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 pt-16"
     >
       <div ref={containerRef} className=" flex-1 flex items-end mb-3">
         <h1
