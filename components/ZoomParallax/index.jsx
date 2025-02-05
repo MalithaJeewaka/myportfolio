@@ -16,6 +16,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { div } from "framer-motion/client";
 
 export default function ZoomParallax() {
   const container = useRef(null);
@@ -107,20 +108,24 @@ export default function ZoomParallax() {
   ];
 
   return (
-    <div ref={container} className={styles.container}>
-      <h1 ref={titleRef} className="absolute top-10 text-[3rem]  left-[7rem]">
-        Dive Into The Story...
-      </h1>
-      <div className={`${styles.sticky} gallery-anim`}>
-        {pictures.map(({ src, scale }, index) => {
-          return (
-            <motion.div key={index} style={{ scale }} className={styles.el}>
-              <div className={styles.imageContainer}>
-                <Image src={src} fill alt="image" placeholder="blur" />
-              </div>
-            </motion.div>
-          );
-        })}
+    <div>
+      <div className="px-[6rem]  mt-10">
+        <h1 ref={titleRef} className="text-[3rem]">
+          Dive Into The Story...
+        </h1>
+      </div>
+      <div ref={container} className={styles.container}>
+        <div className={`${styles.sticky} gallery-anim`}>
+          {pictures.map(({ src, scale }, index) => {
+            return (
+              <motion.div key={index} style={{ scale }} className={styles.el}>
+                <div className={styles.imageContainer}>
+                  <Image src={src} fill alt="image" placeholder="blur" />
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

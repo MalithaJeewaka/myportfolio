@@ -108,7 +108,7 @@ const Hero2 = () => {
         ref={imageContainerRef}
         // onMouseEnter={mouseEnterAnim}
         // onMouseLeave={mouseLeaveAnim}
-        className="w-3/4 h-[250px] transition"
+        className="w-3/4 flex-1 transition"
       >
         <div ref={imageRef} className="relative h-full w-full ">
           {/* relative h-full w-full bg-[url(/images/mee4.jpg)] bg-center bg-cover bg-fixed */}
