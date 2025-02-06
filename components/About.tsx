@@ -78,60 +78,69 @@ const About = () => {
     ));
 
   return (
-    <div
-      ref={containerRef}
-      id="container"
-      className="relative w-full px-10 text-black flex  gap-24 h-screen overflow-hidden  items-center"
-    >
-      <h1 ref={titleRef} className="absolute  top-10 text-[5rem]">
+    <div className="min-h-screen px-[6rem] flex flex-col sms:px-[1rem]">
+      <h1
+        ref={titleRef}
+        className="relative mt-[5rem] text-[5rem] sms:text-[4rem] xss:text-[3rem] sms:text-center"
+      >
         About Me
       </h1>
-      <div className="flex-3 ">
-        <p className="text-[calc(1.3rem+1vw)]  text-anim leading-tight">
-          {wrapWordsInSpans(`Hi, I’m Malitha Jeewaka!`)} <br />{" "}
-        </p>
-        <p className="text-[calc(0.6rem+0.9vw)]  text-anim leading-tight">
-          {wrapWordsInSpans(
-            `I’m a 24-year-old Computer Engineering undergraduate at the University of Ruhuna, Faculty of Engineering. Passionate about crafting innovative tech solutions, I thrive on challenges that push the boundaries of engineering and creativity. With a solid foundation in computer systems and software development, I aim to bridge the gap between complex problems and elegant solutions. When I’m not coding or designing, I enjoy exploring new technologies and working on impactful projects that make a difference. Let’s connect and create something amazing together!`
-          )}
-        </p>
-      </div>
-      <div className=" flexx-1 flex flex-col items-center gap-10 relative">
-        <div className="px-2 pt-3">
-          <p
-            ref={textRef}
-            className="text-[calc(0.9rem+0.2vw)] text-anim leading-tight"
-          >
+      <div
+        ref={containerRef}
+        id="container"
+        className="relative h-full w-full text-black flex  gap-24  overflow-hidden justify-center  items-center flex-1 sms2:flex-col sms2:gap-0 sms2:text-center"
+      >
+        <div className="flex-3 h-full">
+          <p className="text-[calc(1.3rem+1vw)] xss:text-[1.2rem]  text-anim leading-tight">
+            {wrapWordsInSpans(`Hi, I’m Malitha Jeewaka!`)} <br />{" "}
+          </p>
+          <p className="text-[calc(0.6rem+0.9vw)] xss:text-[0.8rem] mds:text-[1rem]  text-anim leading-tight">
             {wrapWordsInSpans(
-              `"Every day is a new canvas, and I’m here to paint it with curiosity, growth, and passion."`
+              `I’m a 24-year-old Computer Engineering undergraduate at the University of Ruhuna, Faculty of Engineering. Passionate about crafting innovative tech solutions, I thrive on challenges that push the boundaries of engineering and creativity. With a solid foundation in computer systems and software development, I aim to bridge the gap between complex problems and elegant solutions. When I’m not coding or designing, I enjoy exploring new technologies and working on impactful projects that make a difference. Let’s connect and create something amazing together!`
             )}
           </p>
         </div>
-        <div
-          ref={circleRef}
-          className="flex justify-center items-center gap-10"
-        >
-          <Button className={`${styles.button} w-[100px] h-[100px] `}>
-            <Link href={"https://github.com/MalithaJeewaka"} target="_blank">
-              <LogoAnimation
-                width={150}
-                height={150}
-                src="/animations/github.lottie"
-              />
-            </Link>
-          </Button>
-          <Button className={`${styles.button} h-[100px] w-[100px] `}>
-            <Link
-              href={"https://www.linkedin.com/in/malitha-jeewaka-37546b26b/"}
-              target="_blank"
+        <div className=" flexx-1 flex flex-col items-center gap-10 relative">
+          <div className="px-2 pt-3">
+            <p
+              ref={textRef}
+              className="text-[calc(0.9rem+0.2vw)] xss:text-[1rem] font-semibold text-anim leading-tight"
             >
-              <LogoAnimation
-                width={180}
-                height={180}
-                src="/animations/linkedin.lottie"
-              />
-            </Link>
-          </Button>
+              {wrapWordsInSpans(
+                `"Every day is a new canvas, and I’m here to paint it with curiosity, growth, and passion."`
+              )}
+            </p>
+          </div>
+          <div
+            ref={circleRef}
+            className="flex justify-center items-center gap-10"
+          >
+            <Button
+              className={`${styles.button} w-[100px] h-[100px] sms2:w-[70px] sms2:h-[70px] `}
+            >
+              <Link href={"https://github.com/MalithaJeewaka"} target="_blank">
+                <LogoAnimation
+                  width={100}
+                  height={100}
+                  src="/animations/github.lottie"
+                />
+              </Link>
+            </Button>
+            <Button
+              className={`${styles.button} w-[100px] h-[100px] sms2:w-[70px] sms2:h-[70px]  `}
+            >
+              <Link
+                href={"https://www.linkedin.com/in/malitha-jeewaka-37546b26b/"}
+                target="_blank"
+              >
+                <LogoAnimation
+                  width={100}
+                  height={100}
+                  src="/animations/linkedin.lottie"
+                />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

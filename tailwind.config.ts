@@ -12,8 +12,9 @@ export default {
         // Desktop-first breakpoints
         xls: { max: "1280px" }, // Default for large screens
         lgs: { max: "1300px" },
-        mds: { max: "768px" },
-        sms: { max: "767px" }, // Mobile screens (override)
+        mds: { max: "900px" },
+        sms: { max: "780px" }, // Mobile screens (override)
+        sms2: { max: "670px" }, // Mobile screens (override)
         xss: { max: "480px" }, // Extra small screens (override)
       },
       colors: {

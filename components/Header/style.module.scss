@@ -1,11 +1,10 @@
 .header {
-  position: absolute;
+  position: relative;
   display: flex;
   z-index: 1;
-  top: 0;
+  height: 10vh;
   color: black;
-  padding: 0 6rem;
-  padding-top: 1rem;
+  padding: 0rem 6rem;
   justify-content: space-between;
   width: 100%;
   font-weight: 300;
@@ -13,10 +12,11 @@
   align-items: center;
   font-size: 1rem;
   font-weight: 400;
-
+  @apply xss:text-[0.8rem] sms:text-[0.9rem] sms:px-[1rem] xss:p-0 xss:items-center xss:text-center;
   .logo {
     display: flex;
     cursor: pointer;
+    @apply xss:w-full xss:items-center xss:justify-center;
     p {
       margin: 0px;
       transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
@@ -62,6 +62,7 @@
   .nav {
     display: flex;
     align-items: center;
+    @apply xss:hidden;
 
     .el {
       display: flex;
