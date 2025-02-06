@@ -109,8 +109,11 @@ export default function ZoomParallax() {
 
   return (
     <div>
-      <div className="px-[6rem]  mt-10">
-        <h1 ref={titleRef} className="text-[3rem]">
+      <div className="px-[6rem] sms:px-[1rem]   mt-10">
+        <h1
+          ref={titleRef}
+          className="text-[3rem] sms:text-[2rem] xss:text-[1.5rem] xss:text-center "
+        >
           Dive Into The Story...
         </h1>
       </div>
