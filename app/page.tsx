@@ -63,9 +63,9 @@ export default function Home() {
         <Achievements />
       </div>
 
-      <div className="py-10 relative">
+      {/* <div className="py-10 relative">
         <Skills />
-      </div>
+      </div> */}
 
       <Footer />
       {/* <ProjectsSection2 /> */}
