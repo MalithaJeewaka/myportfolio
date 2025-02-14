@@ -33,6 +33,7 @@ html {
 body {
   overflow: auto;
   overflow-x: hidden;
-  background-color: #e1dfdd;
+  background-color: #0b0b0d;
+  color: #f6f7ff;
   /* Lenis handles scrolling */
 }
