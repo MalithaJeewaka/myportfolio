@@ -15,6 +15,8 @@ const projects = [
     src: "/assets/11.jpg",
 
     color: "#000000",
+
+    result: "1st Runner Up",
   },
 
   {
@@ -23,6 +25,8 @@ const projects = [
     src: "/assets/10.jpg",
 
     color: "#8C8C8C",
+
+    result: "Finalist",
   },
 
   {
@@ -31,6 +35,8 @@ const projects = [
     src: "/assets/14.jpg",
 
     color: "#EFE8D3",
+
+    result: "Participation",
   },
 
   {
@@ -39,6 +45,8 @@ const projects = [
     src: "/assets/6.jpg",
 
     color: "#706D63",
+
+    result: "Participation",
   },
 ];
 
@@ -55,6 +63,7 @@ export default function AchievementsSection() {
               title={project.title}
               setModal={setModal}
               key={index}
+              result={project.result}
             />
           );
         })}

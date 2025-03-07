@@ -54,8 +54,10 @@ export const projects = [
 const Projects = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-[5rem]">Latest Projects</h1>
+      <div className="px-[6rem] sms:px-[1rem]">
+        <h1 className="text-[5rem] sms:text-[4rem] xss:text-[2.5rem] sms:text-center">
+          Latest Projects
+        </h1>
       </div>
 
       <div>

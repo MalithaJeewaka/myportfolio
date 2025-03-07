@@ -4,7 +4,7 @@ import ProjectSection from "./AchievementsSection/page";
 const Achievements = () => {
   return (
     <div className="flex lgs:flex-col items-center h-full justify-between gap-5">
-      <p className="text-[5rem] sms:text-[1rem] flexx-1">
+      <p className="text-[5rem] px-[6rem] sms:px-[1rem] sms:text-[4rem] xss:text-[3rem] sms:text-center flexx-1">
         Evenets and Achievements
       </p>
       <div className="flex-3">

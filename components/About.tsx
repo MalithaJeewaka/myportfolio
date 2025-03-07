@@ -82,14 +82,14 @@ const About = () => {
     <div className="pt-[2rem] px-[6rem] flex flex-col sms:px-[1rem]">
       <h1
         ref={titleRef}
-        className="relative text-[5rem] sms:text-[4rem] xss:text-[3rem] sms:text-center"
+        className="relative text-[5rem] sms:text-[4rem] xss:text-[3rem] sms:text-center text-white"
       >
         About Me
       </h1>
       <div
         ref={containerRef}
         id="container"
-        className="relative h-full w-full text-black flex  gap-24  overflow-hidden justify-center   flex-1 sms2:flex-col sms2:gap-0 sms2:text-center pt-[4rem] pb-[6rem]"
+        className="relative h-full w-full text-white flex  gap-24  overflow-hidden justify-center   flex-1 sms2:flex-col sms2:gap-0 sms2:text-center pt-[4rem] pb-[6rem]"
       >
         <div className="flex-3 h-full">
           <p className="text-[calc(1.3rem+1vw)] xss:text-[1.2rem]  text-anim leading-tight">
