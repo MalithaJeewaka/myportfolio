@@ -9,6 +9,7 @@ import Parallax from "./Parallax";
 import ZoomParallax from "./ZoomParallax";
 import Magnetic from "@/common/Magnetic";
 import Iridescence from "../src/blocks/Backgrounds/Iridescence/Iridescence";
+import Balatro from "@/src/blocks/Backgrounds/Balatro/Balatro";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,12 +46,12 @@ const Hero2 = () => {
     //   { width: "100%", duration: 2, delay: 2.5 }
     // );
 
-    gsap.from(mainContainer.current, {
-      duration: 1,
-      delay: 2.5,
-      opacity: 0,
-      y: 100,
-    });
+    // gsap.from(mainContainer.current, {
+    //   duration: 1,
+    //   delay: 2.5,
+    //   opacity: 0,
+    //   y: 100,
+    // });
 
     gsap.to(arrowRef.current, {
       y: -10,
@@ -101,7 +102,7 @@ const Hero2 = () => {
   return (
     <div
       ref={mainContainer}
-      className=" -z-10 relative h-[90vh] w-screen flex flex-col px-[6rem] text-[#F6F7FF] py-10 gap-3 sms:px-[1rem] xss:items-center xss:justify-center"
+      className=" -z-10 relative h-[90vh] xss:h-[80vh] w-screen flex flex-col px-[6rem] text-[#F6F7FF] py-10 gap-3 sms:px-[1rem] xss:items-center xss:justify-center"
     >
       <div ref={containerRef} className=" mds:items-start flex items-end mb-3">
         <h1
@@ -129,12 +130,20 @@ const Hero2 = () => {
             loop
             muted
           /> */}
-
+          {/* 
           <Image
             src={"/images/bg.jpg"}
             layout="fill"
             alt="me"
             className="object-cover object-center w-full"
+          /> */}
+          <Balatro
+            isRotate={false}
+            mouseInteraction={false}
+            pixelFilter={2000}
+            color1="#000"
+            color2="#149179"
+            color3="#223537"
           />
         </div>
       </div>
