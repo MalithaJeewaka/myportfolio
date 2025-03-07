@@ -82,7 +82,6 @@ export default function RootLayout({
         <body className={`${clashDisplay.className}  antialiased`}>
           {/* <StickyCursor /> */}
 
-          <Header />
           {children}
         </body>
       </LenisProvider>

@@ -44,7 +44,7 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
 
-      <div className="z-0 relative overflow-x-hidden text-white">
+      <div className="relative overflow-x-hidden text-white">
         {/* <Hero /> */}
 
         <Hero2 />
@@ -52,7 +52,7 @@ export default function Home() {
 
       <ZoomParallax />
 
-      <div className=" bg-cream z-10">
+      <div className=" z-10">
         <About />
       </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
         <Projects />
       </div>
       <ParallaxText />
-      <div className="max-w-7xl mx-auto mt-10 z-20">
+      <div className="mx-auto mt-10 z-20">
         <Achievements />
       </div>
 
