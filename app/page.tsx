@@ -39,13 +39,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="relative">
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
 
       <div className="z-0 relative overflow-x-hidden text-white">
         {/* <Hero /> */}
+
         <Hero2 />
       </div>
 
@@ -63,9 +64,9 @@ export default function Home() {
         <Achievements />
       </div>
 
-      <div className="py-10 relative">
+      {/* <div className="py-10 relative">
         <Skills />
-      </div>
+      </div> */}
 
       <Footer />
       {/* <ProjectsSection2 /> */}

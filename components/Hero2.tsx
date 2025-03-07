@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/all";
 import Parallax from "./Parallax";
 import ZoomParallax from "./ZoomParallax";
 import Magnetic from "@/common/Magnetic";
+import Iridescence from "../src/blocks/Backgrounds/Iridescence/Iridescence";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,13 @@ const Hero2 = () => {
     //   { width: 0 },
     //   { width: "100%", duration: 2, delay: 2.5 }
     // );
+
+    gsap.from(mainContainer.current, {
+      duration: 1,
+      delay: 2.5,
+      opacity: 0,
+      y: 100,
+    });
 
     gsap.to(arrowRef.current, {
       y: -10,
@@ -93,7 +101,7 @@ const Hero2 = () => {
   return (
     <div
       ref={mainContainer}
-      className="bg-cream -z-10 relative h-[90vh] w-screen flex flex-col px-[6rem] text-black py-10 gap-3 sms:px-[1rem] xss:items-center xss:justify-center"
+      className=" -z-10 relative h-[90vh] w-screen flex flex-col px-[6rem] text-[#F6F7FF] py-10 gap-3 sms:px-[1rem] xss:items-center xss:justify-center"
     >
       <div ref={containerRef} className=" mds:items-start flex items-end mb-3">
         <h1
@@ -101,7 +109,7 @@ const Hero2 = () => {
         >
           CREATIVE
           <br />
-          DEVELOPER
+          <span className="text-[#B5FF6D]">DEVELOPER</span>
         </h1>
       </div>
 
@@ -153,7 +161,7 @@ const Hero2 = () => {
             className={`text-[8rem] xss:text-[3rem] sms:text-[4rem] mds:text-[5rem] lgs:text-[6rem] lgs:leading-none lgs:tracking-normal font-medium leading-[7.5rem] text-right  `}
           >
             MALITHA <br />
-            JEEWAKA
+            <span className="text-[#B5FF6D]">JEEWAKA</span>
           </h1>
         </div>
       </div>

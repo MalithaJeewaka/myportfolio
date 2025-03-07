@@ -10,6 +10,7 @@ import styles from "../app/styles.module.scss";
 import Button from "@/common/RoundedButton";
 import LogoAnimation from "@/components/IconAnimationComponent";
 import Link from "next/link";
+import Iridescence from "@/src/blocks/Backgrounds/Iridescence/Iridescence";
 
 gsap.registerPlugin(ScrollTrigger);
 
