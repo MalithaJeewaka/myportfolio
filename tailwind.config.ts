@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "rotating 20s linear infinite",
+      },
       screens: {
         // Desktop-first breakpoints
         xls: { max: "1280px" }, // Default for large screens
