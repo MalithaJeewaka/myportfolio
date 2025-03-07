@@ -45,6 +45,13 @@ const Hero2 = () => {
     //   { width: "100%", duration: 2, delay: 2.5 }
     // );
 
+    gsap.from(mainContainer.current, {
+      duration: 1,
+      delay: 2.5,
+      opacity: 0,
+      y: 100,
+    });
+
     gsap.to(arrowRef.current, {
       y: -10,
       yoyo: true,
