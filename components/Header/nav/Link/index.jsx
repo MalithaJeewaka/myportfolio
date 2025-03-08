@@ -25,7 +25,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         className={styles.indicator}
       ></motion.div>
       <Link href={href}>
-        <Button2 label={title} />
+        <Button2 sliderClass="sms:text-[2rem]" label={title} />
       </Link>
     </motion.div>
   );

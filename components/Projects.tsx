@@ -80,7 +80,7 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div ref={containerRef}>
+      <div className="flex flex-col gap-5" ref={containerRef}>
         <div className="project-container">
           <Project projects={[projects[0], projects[1]]} />
         </div>
@@ -101,7 +101,7 @@ const Projects = () => {
           >
             <Button2
               label="More Projects"
-              containerClass="border inline-flex border-black px-10 py-2 text-[1.2rem]  font-regular"
+              containerClass="border inline-flex border-black px-10 py-2 text-[1.2rem] xss:text-[.8rem]  font-regular"
             />
           </Link>
           {/* bug: animation happense only when text is hovered */}
