@@ -93,8 +93,8 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
-        <div className="mt-14 inline-flex items-center border justify-center">
+      <div className="flex mt-[6rem] items-center justify-center">
+        <div className=" inline-flex items-center border justify-center">
           <Link
             target="_blank"
             href={"https://github.com/MalithaJeewaka?tab=repositories"}
