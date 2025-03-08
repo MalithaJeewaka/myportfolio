@@ -79,10 +79,10 @@ const About = () => {
     ));
 
   return (
-    <div className="pt-[2rem] px-[6rem] flex flex-col sms:px-[1rem]">
+    <div className="pt-[2rem] my-[4rem] px-[6rem] flex flex-col sms:px-[1rem]">
       <h1
         ref={titleRef}
-        className="relative text-[5rem] sms:text-[4rem] xss:text-[3rem] sms:text-center text-white"
+        className="relative text-[5rem] sms:text-[4rem] xss:text-[3rem] sms:text-center text-[#B5FF6D]"
       >
         About Me
       </h1>
