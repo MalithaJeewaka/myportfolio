@@ -18,6 +18,7 @@ import Button2 from "@/common/button/Button";
 import Projects from "@/components/Projects";
 import Skills from "@/components/skills/Skills";
 import ProjectsSection2 from "@/components/projects2/ProjectsSection2";
+import Balatro from "@/src/blocks/Backgrounds/Balatro/Balatro";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,8 +50,9 @@ export default function Home() {
 
         <Hero2 />
       </div>
-
-      <ZoomParallax />
+      <div className="relative">
+        <ZoomParallax />
+      </div>
 
       <div className=" z-10">
         <About />
@@ -60,7 +62,7 @@ export default function Home() {
         <Projects />
       </div>
       <ParallaxText />
-      <div className="mx-auto mt-10 z-20">
+      <div className="mx-auto my-[4rem] z-20">
         <Achievements />
       </div>
 

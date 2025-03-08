@@ -56,7 +56,7 @@ export default function Projects({ projects, reversed = false }) {
           />
         </div>
         <div className={styles.body}>
-          <h3>{projects[0].name}</h3>
+          <h3 className="text-[#B5FF6D]">{projects[0].name}</h3>
           <p>{projects[0].description}</p>
           <p>{projects[0].year}</p>
         </div>
@@ -71,7 +71,7 @@ export default function Projects({ projects, reversed = false }) {
           />
         </div>
         <div className={styles.body}>
-          <h3>{projects[1].name}</h3>
+          <h3 className="text-[#B5FF6D]">{projects[1].name}</h3>
           <p>{projects[1].description}</p>
           <p>{projects[1].year}</p>
         </div>
